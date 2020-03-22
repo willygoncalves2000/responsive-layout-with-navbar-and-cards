@@ -220,13 +220,18 @@ img{
     }
 }
 @media (max-width: 915px){
+    label.logo{
+        font-size: 25;
+        padding-left: 40px;
+    }
     .checkbtn{
         display: block;
     }
     ul{
         position: fixed;
         width: 100%;
-        height: calc(100% - 80px);;
+        height: calc(100% - 80px);
+        height: 100%;
         background: #2c3e50;
         top: 80px;
         left: -100%;
@@ -248,7 +253,7 @@ img{
     #check:checked ~ ul{
         left: 0;
         position: absolute;
-       
+        height: 100%;
     }
     .container{
         padding-top: 20px;
