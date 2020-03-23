@@ -20,7 +20,7 @@ nav{
 }
 label.logo{
     color: white;
-    font-size: 2.5vw;
+    font-size: 2.5em;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
@@ -62,7 +62,7 @@ a.active, a:hover{
 /* BANNER */
 section{
     background: url(images/web-dev.jpg) no-repeat;
-    background-size: 100% 580px  ;
+    background-size: 100% 100%;
     height: calc(100% - 80px);
     min-height: calc(100vh - 80px);
     padding: 20vw 0 5vw;
@@ -89,6 +89,7 @@ section .layer:hover{
 }
 
 
+/* CONTAINER E CARDS */
 .container{
     width: 100%;
     height: 100vh;
@@ -174,10 +175,6 @@ img{
 
 /* MEDIA QUERIES */
 @media (max-width: 1300px){
-    label.logo{
-        font-size: 30;
-        padding-left: 50px;
-    }
     nav ul li a{
         font-size: 16px;
         ;
@@ -187,13 +184,14 @@ img{
     }
 
 }
-@media (max-width: 1100px){
+
+@media (max-width: 1214px){
     label.logo{
-        font-size: 30;
+        font-size: 1.6em;
         padding-left: 50px;
     }
     nav ul li a{
-        font-size: 16px;
+        font-size: 14px;
         ;
     }
     .container{
@@ -201,13 +199,14 @@ img{
     }
 
 }
+
 @media (max-width: 1020px){
     label.logo{
-        font-size: 25;
+        font-size: 1.4em;
         padding-left: 40px;
     }
     nav ul li a{
-        font-size: 15px;
+        font-size: 14px;
     }
     .container{
         padding-top: 20px;
@@ -219,9 +218,10 @@ img{
         height: 1200px;    
     }
 }
-@media (max-width: 915px){
+
+@media (max-width: 941px){
     label.logo{
-        font-size: 25;
+        font-size: 1.5em;
         padding-left: 40px;
     }
     .checkbtn{
@@ -267,4 +267,146 @@ img{
 
 
 }
+@media (max-width: 453px){
+    label.logo{
+        font-size: 1.2em;
+        padding-left: 40px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 80px);
+        height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 60px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        position: absolute;
+        height: 100%;
+    }
+    .container{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 200px 200px 200px;
+        grid-row-gap: 160px;
+        justify-content: center;
+        height: 1200px;  
+    }
+}
+
+@media (max-width: 398px){
+    label.logo{
+        font-size: 1.0em;
+        padding-left: 40px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 80px);
+        height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 60px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        position: absolute;
+        height: 100%;
+    }
+    .container{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 200px 200px 200px;
+        grid-row-gap: 160px;
+        justify-content: center;
+        height: 1200px;  
+    }
+}
+
+@media (max-width: 372px){
+    label.logo{
+        font-size: 0.8em;
+        padding-left: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 80px);
+        height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 60px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        position: absolute;
+        height: 100%;
+    }
+    .container{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 200px 200px 200px;
+        grid-row-gap: 160px;
+        justify-content: center;
+        height: 1200px;  
+    }
+}
+
+
 
