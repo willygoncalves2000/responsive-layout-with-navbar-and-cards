@@ -269,8 +269,9 @@ img{
 }
 @media (max-width: 453px){
     label.logo{
-        font-size: 1.2em;
+        font-size: 1.7em;
         padding-left: 40px;
+        padding-right: 0;
     }
     .checkbtn{
         display: block;
@@ -316,8 +317,10 @@ img{
 
 @media (max-width: 398px){
     label.logo{
-        font-size: 1.0em;
+        font-size: 1.5em;
         padding-left: 40px;
+        padding-right: 0;
+        
     }
     .checkbtn{
         display: block;
@@ -363,8 +366,10 @@ img{
 
 @media (max-width: 372px){
     label.logo{
-        font-size: 0.8em;
-        padding-left: 20px;
+        font-size: 1.2em;
+        padding-left: 20px; 
+        padding-right: 0; 
+        
     }
     .checkbtn{
         display: block;
